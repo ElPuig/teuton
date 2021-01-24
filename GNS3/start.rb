@@ -37,38 +37,6 @@ group "Comprobaciones Practica GNS3 - SMX-M05" do
   run "echo \"ping #{get(:ip_pc3)} -c 5 -i 1 -w 100\" | curl -m 1 telnet://127.0.0.1:#{get(:pc2con)}", on: :host1
   expect "bytes from"
 
-
-
-=begin
- target "Servicio vsftpd instalado"     #{get(:pc1con)}
-  run "apt list vsftpd",  on: :host1
-  expect "installed"
-
-  target "Servicio vsftpd Activo"
-  run "systemctl status vsftpd",  on: :host1
-  expect "active (running"
-
-  target "Existe usuari1"
-  run "id usuari1",  on: :host1
-  expect "uid="
-
-  target "Existe usuari1.txt"
-  run "ls /home/usuari1/",  on: :host1
-  expect "usuari1.txt"
-
-  target "Existe usuari2"
-  run "id usuari2",  on: :host1
-  expect "uid="
-
-  target "Existe usuari2.txt"
-  run "ls /home/usuari2/",  on: :host1
-  expect "usuari2.txt"
-
-  target "Usuario Locales habilitados"
-  run "grep '^local_enable=YES' /etc/vsftpd.conf",  on: :host1
-  expect "YES"
-=end
-
 end
 
 play do
