@@ -1,0 +1,13 @@
+---
+:global:
+        :host1_username: usuario
+        :host1_password: usuario
+        :proyecto: /home/usuario/GNS3/projects/test/test.gns3
+        :ip_pc1: 192.168.1.1
+        :ip_pc2: 192.168.1.2
+        :ip_pc3: 10.10.10.3
+        :ip_r1_e0: 192.168.1.100
+        :ip_r1_e1: 10.10.10.1
+:cases:
+- :tt_members: Juan_test
+  :host1_ip: 10.0.108.57
