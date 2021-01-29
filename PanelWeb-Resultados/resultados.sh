@@ -14,7 +14,7 @@ then
 	done
 
 	echo "<head><meta http-equiv='refresh' content='30'></head>" > $2
-	echo "<table border='1' align='left'>" >> $2
+	echo "<table border='0'><tr><td><table border='1' align='left'>" >> $2
 	tit=" scope= row"
 	while read INPUT 
 		do 
@@ -23,8 +23,8 @@ then
 			echo "${CEROS//'<td>1.0</td>'/<td bgcolor=CCFFCC>OK</td>}"  >>$2
 			tit=""
 	done < /tmp/resultados_final.csv 
-	echo "</table>" >> $2
-	echo "<font face='monospace'><table border='1' align='left'><tbody><tr><td>" >> $2
+	echo "</table></td></tr><tr><td>" >> $2
+	echo "<table border='1' align='left' font face='monospace'><tbody><tr><td>" >> $2
 	
 	date >> $2
 	while read INPUT
@@ -39,7 +39,7 @@ then
 		fi
 	done < $1resume.txt
 	echo "<br>
-	</td></tr></tbody></table>" >> $2
+	</td></tr></tbody></table></td></tr></tabla>" >> $2
 	sudo mv $2 /var/www/html/$2
 	rm $1case-*.txt
 	echo "................................................."
