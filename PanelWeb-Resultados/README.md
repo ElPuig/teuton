@@ -7,4 +7,4 @@ Muestra:
   - En cada columna, los resultados obtenidos por cada alumno en la última ejecución de teuton.
   - En una tabla adicional muestra a que alumno corresponde cada columna
   
-  ![Alt text](schema.jpg?raw=true "Title")
+  ![Alt text](panel.jpg?raw=true "Title")
