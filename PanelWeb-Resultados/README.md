@@ -17,4 +17,4 @@ Ejemplo:
   
   
   
-  ![Alt text](panel.jpg?raw=true "Title")
+  ![Alt text](panel.jpg?raw=true "Panel Web de Resultados")
