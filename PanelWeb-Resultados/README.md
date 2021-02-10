@@ -6,6 +6,7 @@ Obtiene la información de los ficheros estandard de resultados de Teuton.
   - Muestra en cada columna, los resultados obtenidos por cada alumno en la última ejecución de teuton.
   - Muestra en una tabla adicional muestra a que alumno corresponde cada columna
   - Mueve el archivo html generado a /var/www/html/
+  - Crea el archivo en la carpeta de resultados del proyecto Teuton (var/proyecto/resultadosmoodle.csv) con las diferentes puntuaciones distintas de cero de cada alumno. De esta forma se puede tener un histórico de todos los resultados del alumno a lo largo del tiempo.
   
 Requiere 2 parámetros:
   -  La ruta donde estan los reports de teuton (p.e. var/ftp-asix/)
