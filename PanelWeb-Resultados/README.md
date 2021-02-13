@@ -20,3 +20,5 @@ Ejemplo:
   
   
   ![Alt text](panel.jpg?raw=true "Panel Web de Resultados")
+  
+  ![Alt text](Tabla_notas_max.png?raw=true "Tabla de notas máximas")
